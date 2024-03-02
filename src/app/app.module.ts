@@ -4,6 +4,7 @@ import { BrowserModule, provideClientHydration } from '@angular/platform-browser
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MapsModule } from './maps/maps.module';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -12,6 +13,7 @@ import { MapsModule } from './maps/maps.module';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    HttpClientModule,
     MapsModule
   ],
   providers: [ ],
